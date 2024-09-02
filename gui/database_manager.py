@@ -30,7 +30,7 @@ class DatabaseManager:
         self.append_q_kind_record()
 
     def create_tables(self):
-        with open('schema.sql', 'r') as schema_file:
+        with open('../sql/schema.sql', 'r') as schema_file:
             schema_sql = schema_file.read()
         self.cursor.execute(schema_sql)
 
