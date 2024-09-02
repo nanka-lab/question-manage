@@ -6,7 +6,7 @@ import mysql.connector as sql
 class InputField_Q:
     def __init__(self, parent):
         self.q_entry = tk.Label(parent, text="Question", bg="red", width=31, height=1)
-        self.q_entry.place(x=10, y=500)
+        self.q_entry.place(x=10, y=500, width=31, height=1)
         self.entry = scrolledtext.ScrolledText(parent, wrap=tk.WORD, width=39, height=8)
         self.entry.place(x=10, y=520)
 
